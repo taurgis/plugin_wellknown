@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="wellKnownFileName">
+                <display-name xml:lang="x-default">ACME: File Name</display-name>
+                <description xml:lang="x-default">The required filename that should be put in the ACME challenge folder.</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="wellKnownValue">
+                <display-name xml:lang="x-default">ACME: File Contents</display-name>
+                <description xml:lang="x-default">The contents of the ACME file.</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="ACME">
+                <display-name xml:lang="x-default">ACME Challenge (Well Known)</display-name>
+                <attribute attribute-id="wellKnownFileName"/>
+                <attribute attribute-id="wellKnownValue"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+</metadata>
